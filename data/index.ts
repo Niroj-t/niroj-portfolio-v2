@@ -20,64 +20,22 @@ export const skills = [
 ];
 export const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "AI Resume Analyzer",
     description:
-      "A full-stack e-commerce solution built with Next.js, TypeScript, and Stripe integration. Features include user authentication, product management, and real-time inventory tracking.",
-    tech: ["Next.js", "TypeScript", "PostgreSQL", "Stripe", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "https://example.com",
-    image: "/placeholder.svg?height=200&width=400",
-    image_dark: "/placeholder.dark.svg?height=200&width=400",
+      "Developed an AI Resume Analyzer that allows users to upload their resume and compare it with a job description. The tool evaluates compatibility, generates an ATS score, highlights weaknesses, and provides suggestions to improve the resume",
+    tech: ["Next.js", "TypeScript", "Prisma", "Neon PostgreSQL","Gemini API", "Tailwind CSS"],
+    github: "https://github.com/Niroj-t/ai-resume-analyzer",
+    live: "https://ai-resume-analyzer-w5gz.vercel.app",
+    image: "/resume-analyzer.png",
   },
   {
-    title: "Task Management App",
+    title: "E-State",
     description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    tech: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-    github: "https://github.com",
-    live: "https://example.com",
-    image: "/placeholder.svg?height=200&width=400",
-    image_dark: "/placeholder.dark.svg?height=200&width=400",
-  },
-  {
-    title: "AI Chat Assistant",
-    description:
-      "An intelligent chat assistant powered by OpenAI's GPT API with custom training data and context-aware responses.",
-    tech: ["Python", "FastAPI", "OpenAI API", "React", "WebSocket"],
-    github: "https://github.com",
-    live: "https://example.com",
-    image: "/placeholder.svg?height=200&width=400",
-    image_dark: "/placeholder.dark.svg?height=200&width=400",
-  },
-  {
-    title: "Data Visualization Dashboard",
-    description:
-      "Interactive dashboard for data visualization with real-time charts, filtering capabilities, and export functionality.",
-    tech: ["D3.js", "React", "Node.js", "PostgreSQL", "Chart.js"],
-    github: "https://github.com",
-    live: "https://example.com",
-    image: "/placeholder.svg?height=200&width=400",
-    image_dark: "/placeholder.dark.svg?height=200&width=400",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "My personal portfolio showcasing my projects, skills, and experience. Built with Next.js and Tailwind CSS for a responsive design.",
-    tech: ["Next.js", "Tailwind CSS", "React", "TypeScript"],
-    github: "https://github.com",
-    live: "https://example.com",
-    image: "/placeholder.svg?height=200&width=400",
-    image_dark: "/placeholder.dark.svg?height=200&width=400",
-  },
-  {
-    title: "Blog Platform",
-    description:
-      "A full-featured blogging platform with user authentication, markdown support, and social sharing capabilities.",
-    tech: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "https://example.com",
-    image: "/placeholder.svg?height=200&width=400",
-    image_dark: "/placeholder.dark.svg?height=200&width=400",
+      "Estate is a responsive real estate web app built with React, Vite, and Tailwind CSS. It features project showcases, customer testimonials, an interactive contact form, and real-time notifications for a seamless user experience.",
+    tech: ["React", "Tailwind CSS"],
+    github: "https://github.com/Niroj-t/Estate",
+    live: "https://estate-8ute.vercel.app",
+    image: "/estate.png",
   },
 ];
 

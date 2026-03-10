@@ -1,13 +1,8 @@
 "use client"
-import type React from "react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Textarea } from "@/components/ui/textarea"
-import {
-    ExternalLink,
-    Github,
-} from "lucide-react"
+import { FaExternalLinkAlt, FaGithub} from "react-icons/fa";
 import { projects } from "@/data"
 import { useTheme } from "next-themes"
 import Link from "next/link"
@@ -30,7 +25,7 @@ export default function Projects() {
                             aria-label={`Project: ${project.title}, Description: ${project.description}, Technologies: ${project.tech.join(', ')}`}>
                             <div className="sm:h-full  min-h-40 min-w-full sm:min-w-40 bg-muted rounded-sm max-w-min ">
                                 <img
-                                    src={theme === 'dark' ? (project.image_dark || project.image) : project.image}
+                                    src={theme === 'dark' ? ( project.image) : project.image}
                                     alt={project.title}
                                     className="w-full h-full object-cover rounded-sm transition-transform duration-300 group-hover:scale-[1.03]"
                                     aria-label={`Project image for ${project.title}`} />
@@ -43,13 +38,13 @@ export default function Projects() {
                                             <Button variant="ghost" className="rounded-full" size="icon" asChild>
                                                 <Link href={project.github} target="_blank" rel="noopener noreferrer"
                                                     aria-label={`View project: ${project.title} on GitHub`}>
-                                                    <Github className="w-4 h-4" />
+                                                    <FaGithub className="w-4 h-4" />
                                                 </Link>
                                             </Button>
                                             <Button variant="ghost" className="rounded-full" size="icon" asChild>
                                                 <Link href={project.live} target="_blank" rel="noopener noreferrer"
                                                     aria-label={`Visit project: ${project.title} live`}>
-                                                    <ExternalLink className="w-4 h-4" />
+                                                    <FaExternalLinkAlt className="w-4 h-4" />
                                                 </Link>
                                             </Button>
                                         </div>

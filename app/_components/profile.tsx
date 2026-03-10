@@ -10,16 +10,11 @@ import { Calendar, Download, MapPin } from "lucide-react";
 import { skills } from "@/data";
 import Link from "next/link";
 import Hero from "./Hero";
-import { TABS } from "../(root)/page";
 
-interface ProfileProps {
-  setActiveTab: (tab: (typeof TABS)[number]) => void;
-}
-
-export default function Profile({ setActiveTab }: ProfileProps) {
+export default function Profile() {
   return (
     <>
-      <Hero setActiveTab={setActiveTab} />
+      <Hero />
 
       <div className="space-y-8">
         {/* Bio Section */}

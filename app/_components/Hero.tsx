@@ -1,17 +1,13 @@
 "use client"
-
+ 
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { TABS } from '../(root)/page'
-
-interface HeroProps {
-    setActiveTab: (tab: typeof TABS[number]) => void
-}
-
-export default function Hero({ setActiveTab }: HeroProps) {
+import Link from 'next/link'
+ 
+export default function Hero() {
     const { resolvedTheme } = useTheme()
     const [isMounted, setIsMounted] = useState(false)
 
@@ -89,15 +85,18 @@ export default function Hero({ setActiveTab }: HeroProps) {
                                 Download Resume
                             </Button>
                         </a>
-                        <Button
-                            variant="outline"
-                            size="sm"
-                            className="rounded-full text-muted-foreground"
-                            onClick={() => setActiveTab("contact")}
+                        <Link
+                            href="/contact"
                             aria-label="Contact Me"
                         >
-                            Contact Me
-                        </Button>
+                            <Button
+                                variant="outline"
+                                size="sm"
+                                className="rounded-full text-muted-foreground"
+                            >
+                                Contact Me
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>

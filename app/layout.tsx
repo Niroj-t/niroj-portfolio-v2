@@ -1,0 +1,76 @@
+import type React from "react"
+import type { Metadata } from "next"
+import { Montserrat } from "next/font/google"
+import "./globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster } from 'sonner'
+import { Analytics } from "@vercel/analytics/next"
+
+const inter = Montserrat({ subsets: ["latin"] })
+
+export const metadata: Metadata = {
+  title: {
+    default: "Niroj Thapa - Portfolio",
+    template: "%s | Niroj Thapa",
+  },
+  description: "Full Stack Developer & UI/UX Designer Portfolio of Alex — building scalable, elegant web apps with React, Node.js, and design precision.",
+  keywords: [
+    "Frontend Developer",
+    "React Developer",
+    "Portfolio",
+    "Web Developer",
+  ],
+  authors: [{ name: "Niroj Thapa", url: "https://github.com/psparwez" }],
+  creator: "Niroj Thapa",
+  metadataBase: new URL("https://minimal-portfolio-ps.vercel.app"),
+  openGraph: {
+    type: "website",
+    url: "https://minimal-portfolio-ps.vercel.app",
+    title: "Niroj Thapa - Portfolio",
+    description:
+      "Explore the portfolio of Alex, a frontend developer focused on performance, scalability, and clean UI/UX.",
+    siteName: "Niroj Thapa Portfolio",
+    images: [
+      {
+        url: "/og_bannerr.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Alex Developer Portfolio",
+      },
+    ],
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Niroj Thapa - Portfolio",
+    description:
+      "Niroj Thapa Portfolio of Niroj.",
+    creator: "@psparwez",
+    images: ["/og_bannerr.jpeg"],
+  },
+  icons: {
+    icon: "/favicon-v2.ico",
+  },
+};
+
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="google-site-verification" content="ydHSzattedGcB-5-HAZYQTflySCqIgWSVqZD8wgedEo" />
+      </head>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          {children}
+          <Analytics />
+          <Toaster richColors />
+        </ThemeProvider>
+      </body>
+    </html>
+  )
+}

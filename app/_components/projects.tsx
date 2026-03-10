@@ -31,7 +31,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover:bg-muted/60 transition-all duration-300 min-h-min flex flex-col sm:flex-row group p-2"
+              className="overflow-hidden hover:bg-muted/60 transition-all duration-300 min-h-min flex flex-col sm:flex-row group p-4"
               aria-label={`Project: ${project.title}, Description: ${project.description}, Technologies: ${project.tech.join(", ")}`}
             >
               <div className="sm:h-full  min-h-40 min-w-full sm:min-w-40 bg-muted rounded-sm max-w-min ">
@@ -82,20 +82,18 @@ export default function Projects() {
                   <CardDescription className="line-clamp-4">
                     {project.description}
                   </CardDescription>
-                </CardHeader>
-                <CardContent className="px-2 sm:px-4 py-2">
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech) => (
-                      <div
-                        key={tech}
-                        className="inline-flex items-center gap-2 rounded-xl border bg-card px-3 py-1.5 text-[10px] sm:text-xs shadow-sm transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md text-muted-foreground hover:text-foreground font-medium"
-                        aria-label={`Technology used: ${tech}`}
+                  {project.slug && (
+                    <div className="mt-2">
+                      <Link
+                        href={`/projects/${project.slug}`}
+                        className="text-xs sm:text-sm text-muted-foreground hover:text-foreground underline underline-offset-4"
+                        aria-label={`Read more about ${project.title}`}
                       >
-                        <span>{tech}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
+                        Learn More...
+                      </Link>
+                    </div>
+                  )}
+                </CardHeader>
               </div>
             </Card>
           ))}

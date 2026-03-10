@@ -1,5 +1,11 @@
 import { FaReact, FaGitAlt, FaGithub, FaNpm } from "react-icons/fa";
-import { SiNextdotjs, SiPostgresql, SiTailwindcss, SiPostman, SiRadixui } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiPostgresql,
+  SiTailwindcss,
+  SiPostman,
+  SiRadixui,
+} from "react-icons/si";
 import { TbBrandTypescript } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiJira } from "react-icons/si";
@@ -20,26 +26,72 @@ export const skills = [
 ];
 export const projects = [
   {
+    slug: "ai-resume-analyzer",
     title: "AI Resume Analyzer",
     description:
-      "Developed an AI Resume Analyzer that allows users to upload their resume and compare it with a job description. The tool evaluates compatibility, generates an ATS score, highlights weaknesses, and provides suggestions to improve the resume",
-    tech: ["Next.js", "TypeScript", "Prisma", "Neon PostgreSQL","Gemini API", "Tailwind CSS"],
+      "AI-powered resume analyzer that compares resumes against job descriptions, generates an ATS score, and highlights areas for improvement.",
+    longDescription:
+      "A dynamic AI Resume Analyzer that allows users to upload their resume and compare it with a job description. The tool evaluates compatibility, generates an ATS score, highlights weaknesses, and provides suggestions to improve the resume for better shortlisting chances.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "Neon PostgreSQL",
+      "Gemini API",
+      "Tailwind CSS",
+    ],
+    features: [
+      "Upload resume and job description to generate compatibility score in real time.",
+      "ATS-style scoring with clear breakdown of strengths and weaknesses.",
+      "Actionable suggestions to improve keywords, structure, and clarity.",
+      "Clean, responsive UI optimized for both desktop and mobile.",
+    ],
+    challenges: [
+      "Designing prompts that return consistent and meaningful scores from the AI model.",
+      "Handling different resume formats and large text inputs efficiently.",
+      "Balancing accuracy with performance for a smooth user experience.",
+    ],
+    learnings: [
+      "Deepened understanding of integrating AI APIs into real-world products.",
+      "Improved skills with Next.js server actions and data fetching patterns.",
+      "Strengthened knowledge of performance optimization and UX for form-heavy flows.",
+    ],
+    feedbackEmail: "tniroj35@gmail.com",
     github: "https://github.com/Niroj-t/ai-resume-analyzer",
     live: "https://ai-resume-analyzer-w5gz.vercel.app",
     image: "/placeholder.svg?height=200&width=400",
     image_dark: "/placeholder.dark.svg?height=200&width=400",
-
   },
   {
-    title: "E-State",
+    slug: "niroj-portfolio",
+    title: "Portfolio | Niroj Thapa",
     description:
-      "Estate is a responsive real estate web app built with React, Vite, and Tailwind CSS. It features project showcases, customer testimonials, an interactive contact form, and real-time notifications for a seamless user experience.",
-    tech: ["React", "Tailwind CSS"],
-    github: "https://github.com/Niroj-t/Estate",
-    live: "https://estate-8ute.vercel.app",
-    image: "/placeholder.svg?height=200&width=400",
+      "A modern, minimal portfolio showcasing my projects, skills, and experience using the latest web technologies.",
+    longDescription:
+      "My personal portfolio is built to highlight my journey as a frontend developer. It focuses on a clean, minimal UI with smooth navigation between profile, projects, experience, education, and contact sections. The site is fully responsive, supports dark mode, and is optimized for readability and performance.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Radix UI", "TypeScript"],
+    features: [
+      "Section-based layout for profile, projects, experience, education, and contact.",
+      "Responsive design optimized for mobile, tablet, and desktop viewports.",
+      "Dark mode support with a smooth theme toggle.",
+      "Reusable UI components built with Radix UI + Tailwind CSS.",
+      "Project details pages with rich descriptions, tech stack, and external links.",
+    ],
+    challenges: [
+      "Designing a layout that stays clean and readable across all screen sizes.",
+      "Balancing minimal design with enough detail to present projects clearly.",
+      "Ensuring navigation feels fast and smooth between sections and pages.",
+    ],
+    learnings: [
+      "Improved skills in building production-ready layouts with Next.js and Tailwind CSS.",
+      "Refined component composition and state management for a portfolio-scale app.",
+      "Deepened understanding of accessibility and typography for content-heavy pages.",
+    ],
+    feedbackEmail: "tniroj35@gmail.com",
+    github: "https://github.com/Niroj-t/niroj-portfolio-v2", // update if your repo URL differs
+    live: "https://your-portfolio-live-url.com", // put your actual deployed URL here
+    image: "/placeholder.svg?height=200&width=400", // or a real screenshot path
     image_dark: "/placeholder.dark.svg?height=200&width=400",
-
   },
 ];
 
@@ -52,7 +104,7 @@ export const experience = [
       "Developed a survey platform for livestock/poultry data with image-based capture, OCR extraction, and editable verification workflows.",
       "Implemented image scanning workflow: file/camera uploads, canvas cropping, quality checks, and overlay verification for OCR results.",
       "Built inline-editable tables with confidence-based highlighting, filters, pagination, and Excel (XLSX) export for survey data management.",
-      "Integrated authentication and security using Better Auth; ensured code quality with React Hook Form + Yup, Biome, and Husky."
+      "Integrated authentication and security using Better Auth; ensured code quality with React Hook Form + Yup, Biome, and Husky.",
     ],
   },
 ];

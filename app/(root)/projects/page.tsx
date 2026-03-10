@@ -15,10 +15,10 @@ const Footer = dynamic(() => import("../../_components/footer"), {
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen w-full relative">
+    <div className="min-h-screen w-full flex flex-col">
       <Header />
       <Navigation />
-      <main className="container mx-auto px-3 lg:px-20 xl:px-32 py-8">
+      <main className="container mx-auto px-3 lg:px-20 xl:px-32 py-8 flex-1">
         <Projects />
       </main>
       <Footer />

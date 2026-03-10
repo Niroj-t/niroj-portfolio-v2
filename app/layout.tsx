@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Portfolio",
     "Web Developer",
   ],
-  authors: [{ name: "Niroj Thapa", url: "https://github.com/psparwez" }],
+  authors: [{ name: "Niroj Thapa", url: "https://github.com/Niroj-t" }],
   creator: "Niroj Thapa",
   metadataBase: new URL("https://minimal-portfolio-ps.vercel.app"),
   openGraph: {
@@ -28,25 +28,25 @@ export const metadata: Metadata = {
     url: "https://minimal-portfolio-ps.vercel.app",
     title: "Niroj Thapa - Portfolio",
     description:
-      "Explore the portfolio of Alex, a frontend developer focused on performance, scalability, and clean UI/UX.",
+      "Explore the portfolio of Niroj, a frontend developer focused on performance, scalability, and clean UI/UX.",
     siteName: "Niroj Thapa Portfolio",
     images: [
       {
         url: "/og_bannerr.jpeg",
         width: 1200,
         height: 630,
-        alt: "Alex Developer Portfolio",
+        alt: "Niroj Thapa",
       },
     ],
-    locale: "en_US",
+    locale: "en_NP",
   },
   twitter: {
     card: "summary_large_image",
     title: "Niroj Thapa - Portfolio",
     description:
       "Niroj Thapa Portfolio of Niroj.",
-    creator: "@psparwez",
-    images: ["/og_bannerr.jpeg"],
+    creator: "@nirojthapa",
+    images: ["/og_bannerr_1.jpeg"],
   },
   icons: {
     icon: "/favicon-v2.ico",

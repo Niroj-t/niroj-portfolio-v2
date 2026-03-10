@@ -1,16 +1,19 @@
-import { FaReact, FaGitAlt, FaGithub, FaNpm } from "react-icons/fa";
+import { FaReact, FaGitAlt, FaGithub, FaNpm,FaHtml5, FaCss3Alt } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiPostgresql,
   SiTailwindcss,
   SiPostman,
   SiRadixui,
+  SiVercel,
 } from "react-icons/si";
 import { TbBrandTypescript } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiJira } from "react-icons/si";
 
 export const skills = [
+  { name: "HTML", icon: FaHtml5 },
+  { name: "CSS", icon: FaCss3Alt },
   { name: "JavaScript", icon: IoLogoJavascript },
   { name: "TypeScript", icon: TbBrandTypescript },
   { name: "React", icon: FaReact },
@@ -20,6 +23,7 @@ export const skills = [
   { name: "Jira", icon: SiJira },
   { name: "Git", icon: FaGitAlt },
   { name: "GitHub", icon: FaGithub },
+  { name: "Vercel", icon: SiVercel },
   { name: "Postman", icon: SiPostman },
   { name: "npm", icon: FaNpm },
   { name: "Radix UI", icon: SiRadixui },

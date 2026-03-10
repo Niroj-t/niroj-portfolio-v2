@@ -36,7 +36,7 @@ export default function Projects() {
             >
               <div className="sm:h-full  min-h-40 min-w-full sm:min-w-40 bg-muted rounded-sm max-w-min ">
                 <img
-                  src={theme === 'dark' ? (project.image_dark || project.image) : project.image}
+                  src={theme === 'dark' ? (project.image) : project.image}
                   alt={project.title}
                   className="w-full h-full object-cover rounded-sm transition-transform duration-300 group-hover:scale-[1.03]"
                   aria-label={`Project image for ${project.title}`}

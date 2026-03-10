@@ -63,8 +63,7 @@ export const projects = [
     feedbackEmail: "tniroj35@gmail.com",
     github: "https://github.com/Niroj-t/ai-resume-analyzer",
     live: "https://ai-resume-analyzer-w5gz.vercel.app",
-    image: "/placeholder.svg?height=200&width=400",
-    image_dark: "/placeholder.dark.svg?height=200&width=400",
+    image: "/resume-analyzer.png",
   },
   {
     slug: "niroj-portfolio",
@@ -92,10 +91,9 @@ export const projects = [
       "Deepened understanding of accessibility and typography for content-heavy pages.",
     ],
     feedbackEmail: "tniroj35@gmail.com",
-    github: "https://github.com/Niroj-t/niroj-portfolio-v2", // update if your repo URL differs
-    live: "https://your-portfolio-live-url.com", // put your actual deployed URL here
-    image: "/placeholder.svg?height=200&width=400", // or a real screenshot path
-    image_dark: "/placeholder.dark.svg?height=200&width=400",
+    github: "https://github.com/Niroj-t/niroj-portfolio-v2", 
+    live: "https://nirojt.com.np", 
+    image: "/portfolio.png",
   },
 ];
 

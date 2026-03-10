@@ -26,7 +26,9 @@ export const projects = [
     tech: ["Next.js", "TypeScript", "Prisma", "Neon PostgreSQL","Gemini API", "Tailwind CSS"],
     github: "https://github.com/Niroj-t/ai-resume-analyzer",
     live: "https://ai-resume-analyzer-w5gz.vercel.app",
-    image: "/resume-analyzer.png",
+    image: "/placeholder.svg?height=200&width=400",
+    image_dark: "/placeholder.dark.svg?height=200&width=400",
+
   },
   {
     title: "E-State",
@@ -35,7 +37,9 @@ export const projects = [
     tech: ["React", "Tailwind CSS"],
     github: "https://github.com/Niroj-t/Estate",
     live: "https://estate-8ute.vercel.app",
-    image: "/estate.png",
+    image: "/placeholder.svg?height=200&width=400",
+    image_dark: "/placeholder.dark.svg?height=200&width=400",
+
   },
 ];
 

@@ -49,7 +49,7 @@ export default function Profile() {
 
             <div>
               <Link
-                href="/resume_dummy.pdf"
+                href="/Niroj_Thapa_Resume.pdf"
                 target="_blank"
                 className="inline-flex items-center text-sm text-primary hover:underline"
                 aria-label="Download Resume"

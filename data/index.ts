@@ -6,10 +6,12 @@ import {
   SiPostman,
   SiRadixui,
   SiVercel,
+  SiCypress,
 } from "react-icons/si";
 import { TbBrandTypescript } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiJira } from "react-icons/si";
+import { LuComponent } from "react-icons/lu";
 
 export const skills = [
   { name: "HTML", icon: FaHtml5 },
@@ -20,13 +22,15 @@ export const skills = [
   { name: "Next.js", icon: SiNextdotjs },
   { name: "PostgreSQL", icon: SiPostgresql },
   { name: "Tailwind CSS", icon: SiTailwindcss },
+  { name: "Cypress", icon: SiCypress },
+  { name: "Postman", icon: SiPostman },
   { name: "Jira", icon: SiJira },
   { name: "Git", icon: FaGitAlt },
   { name: "GitHub", icon: FaGithub },
-  { name: "Vercel", icon: SiVercel },
-  { name: "Postman", icon: SiPostman },
-  { name: "npm", icon: FaNpm },
+  { name: "shadcn/ui", icon: LuComponent },
   { name: "Radix UI", icon: SiRadixui },
+  { name: "Vercel", icon: SiVercel },
+  { name: "npm", icon: FaNpm },
 ];
 export const projects = [
   {

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "React Developer",
     "Portfolio",
     "Web Developer",
+    "nirojt"
   ],
   authors: [{ name: "Niroj Thapa", url: "https://github.com/Niroj-t" }],
   creator: "nirojt",

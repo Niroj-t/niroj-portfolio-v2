@@ -111,6 +111,7 @@ export const experience = [
       "Implemented image scanning workflow: file/camera uploads, canvas cropping, quality checks, and overlay verification for OCR results.",
       "Built inline-editable tables with confidence-based highlighting, filters, pagination, and Excel (XLSX) export for survey data management.",
       "Integrated authentication and security using Better Auth; ensured code quality with React Hook Form + Yup, Biome, and Husky.",
+      "Collaborated with Backend and QA teams through Jira for issue tracking, testing, and feature delivery.",
     ],
   },
 ];

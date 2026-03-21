@@ -1,35 +1,55 @@
-"use client"
+"use client";
 
-import React, { Fragment, useEffect, useState } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { cn } from "@/lib/utils"
-import { useIsMobile } from "@/hooks/use-mobile"
-import { User, Briefcase, Folder, Mail, GraduationCap } from "lucide-react"
+import React, { Fragment, useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { User, Briefcase, Folder, Mail, GraduationCap } from "lucide-react";
 
 const tabs = [
   { id: "profile", label: "Profile", icon: <User size={16} />, href: "/" },
-  { id: "projects", label: "Projects", icon: <Folder size={16} />, href: "/projects" },
-  { id: "experience", label: "Experience", icon: <Briefcase size={16} />, href: "/experience" },
-  { id: "education", label: "Education", icon: <GraduationCap size={16} />, href: "/education" },
-  { id: "contact", label: "Contact", icon: <Mail size={16} />, href: "/contact" },
-] as const
+  {
+    id: "projects",
+    label: "Projects",
+    icon: <Folder size={16} />,
+    href: "/projects",
+  },
+  {
+    id: "experience",
+    label: "Experience",
+    icon: <Briefcase size={16} />,
+    href: "/experience",
+  },
+  {
+    id: "education",
+    label: "Education",
+    icon: <GraduationCap size={16} />,
+    href: "/education",
+  },
+  {
+    id: "contact",
+    label: "Contact",
+    icon: <Mail size={16} />,
+    href: "/contact",
+  },
+] as const;
 
 export default function Navigation() {
-  const [isMounted, setIsMounted] = useState(false)
-  const isMobile = useIsMobile()
-  const pathname = usePathname()
+  const [isMounted, setIsMounted] = useState(false);
+  const isMobile = useIsMobile();
+  const pathname = usePathname();
 
   useEffect(() => {
-    setIsMounted(true)
-  }, [])
+    setIsMounted(true);
+  }, []);
 
-  if (!isMounted) return null
+  if (!isMounted) return null;
 
   const isActive = (href: string) => {
-    if (href === "/") return pathname === "/"
-    return pathname.startsWith(href)
-  }
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
+  };
 
   return (
     <nav
@@ -67,14 +87,15 @@ export default function Navigation() {
                 <Link
                   href={tab.href}
                   className={cn(
-                    "py-4 px-2 text-sm font-medium border-b-2 transition-colors cursor-pointer",
+                    "py-4 px-2 text-sm font-medium border-b-2 transition-colors cursor-pointer flex items-center gap-2",
                     isActive(tab.href)
                       ? "border-primary text-primary"
                       : "border-transparent text-muted-foreground hover:text-foreground",
                   )}
                   aria-label={`Navigate to ${tab.label} section`}
                 >
-                  {tab.label}
+                  {tab.icon}
+                  <span>{tab.label}</span>
                 </Link>
               )}
             </Fragment>
@@ -82,5 +103,5 @@ export default function Navigation() {
         </div>
       </div>
     </nav>
-  )
+  );
 }

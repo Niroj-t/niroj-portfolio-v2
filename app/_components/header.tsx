@@ -71,7 +71,7 @@ export default function Header() {
                                 <div className="size-1.5 sm:size-2.5 animate-pulse relative after:content-[''] after:absolute flex items-center justify-center after:h-full after:w-full after:bg-green-400 after:rounded-full after:animate-ping rounded-full bg-primary"></div>
                             </h1>
                             <p className="text-muted-foreground text-[11px] sm:text-sm">
-                                Frontend Developer • QA Enthusiast
+                                Frontend Developer
                             </p>
                         </div>
                     </div>

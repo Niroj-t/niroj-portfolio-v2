@@ -1,4 +1,4 @@
-import { FaReact, FaGitAlt, FaGithub, FaNpm,FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { FaReact, FaGitAlt, FaGithub, FaNpm,FaHtml5, FaCss3Alt,  FaDatabase } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiPostgresql,
@@ -20,7 +20,7 @@ export const skills = [
   { name: "TypeScript", icon: TbBrandTypescript },
   { name: "React", icon: FaReact },
   { name: "Next.js", icon: SiNextdotjs },
-  { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "SQL", icon: FaDatabase },
   { name: "Tailwind CSS", icon: SiTailwindcss },
   { name: "Cypress", icon: SiCypress },
   { name: "Postman", icon: SiPostman },

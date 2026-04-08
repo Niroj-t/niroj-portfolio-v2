@@ -1,4 +1,12 @@
-import { FaReact, FaGitAlt, FaGithub, FaNpm,FaHtml5, FaCss3Alt,  FaDatabase } from "react-icons/fa";
+import {
+  FaReact,
+  FaGitAlt,
+  FaGithub,
+  FaNpm,
+  FaHtml5,
+  FaCss3Alt,
+  FaDatabase,
+} from "react-icons/fa";
 import {
   SiNextdotjs,
   SiPostgresql,
@@ -70,6 +78,52 @@ export const projects = [
     image: "/resume-analyzer.png",
   },
   {
+    slug: "dealhunt-price-tracker",
+    title: "DealHunt - Smart Product Price Tracker",
+    description:
+      "A smart price tracking web app that monitors products across e-commerce sites and sends alerts when prices drop.",
+    longDescription:
+      "DealHunt is a full-stack price tracking application that allows users to monitor products from multiple e-commerce platforms like Amazon, Walmart, and Zara. Users can add product URLs, track real-time prices, and visualize price history through interactive charts. The system automatically checks prices daily using scheduled cron jobs and notifies users via email when prices drop. It integrates Firecrawl for reliable web scraping, Supabase for backend and authentication, and Resend for transactional emails, making it a scalable and production-ready SaaS-style application.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Firecrawl",
+      "Resend",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Recharts",
+    ],
+    features: [
+      "Track products from multiple e-commerce platforms using a single URL input.",
+      "Automated daily price checks using Supabase pg_cron.",
+      "Interactive price history charts with Recharts.",
+      "Secure Google authentication with Supabase Auth.",
+      "Email notifications when product prices drop.",
+      "AI-powered structured data extraction using Firecrawl.",
+    ],
+    challenges: [
+      "Handling dynamic and JavaScript-heavy websites for accurate price scraping.",
+      "Designing a reliable cron job system for automated price updates.",
+      "Maintaining data consistency with concurrent price updates and history tracking.",
+      "Implementing secure authentication and Row Level Security (RLS) policies.",
+    ],
+    learnings: [
+      "Learned to build a full-stack SaaS-style application with Next.js and Supabase.",
+      "Gained experience integrating third-party APIs like Firecrawl and Resend.",
+      "Improved understanding of cron jobs, background processing, and automation.",
+      "Strengthened knowledge of database design, indexing, and security with RLS.",
+    ],
+    highlight:
+      "Automated multi-site price tracking with daily cron jobs and real-time alerts",
+    feedbackEmail: "tniroj35@gmail.com",
+    github: "https://github.com/Niroj-t/dealhunt",
+    live: "https://dealhunt-tracker.vercel.app", 
+    image: "/dealhunt.png",
+    status: "Completed",
+  },
+  {
     slug: "niroj-portfolio",
     title: "Portfolio | Niroj Thapa",
     description:
@@ -95,8 +149,8 @@ export const projects = [
       "Deepened understanding of accessibility and typography for content-heavy pages.",
     ],
     feedbackEmail: "tniroj35@gmail.com",
-    github: "https://github.com/Niroj-t/niroj-portfolio-v2", 
-    live: "https://nirojt.com.np", 
+    github: "https://github.com/Niroj-t/niroj-portfolio-v2",
+    live: "https://nirojt.com.np",
     image: "/portfolio.png",
   },
 ];
